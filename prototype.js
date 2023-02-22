@@ -50,3 +50,11 @@ Person.prototype.run = function () {
     console.info(` ${this.firstName} is running`);
 }
 
+/* Cara kerja Prototype Inheritance
+bagaimana bisa property di prototype diakses dari object instance?
+ketika mengakses property di object instance, pertama akan di cek
+apakah di object tersebut terdapat property tersebut atau tidak, 
+jika tidak, maka akan dicek di _proto_(prototypenya), 
+jika masih tidak ada, akan dicek lagi di _proto_(prototype)
+yang lebih tinggi, begitu seterusnya, sampai di Object Prototype.
+*/
